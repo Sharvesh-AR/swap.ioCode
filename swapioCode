@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class swapioCode {
+    public static void main(String[] args){
+        int x , y , z ;
+        int i ;
+        Scanner ars = new Scanner(System.in);
+
+        System.out.println("Enter the x: ");
+        x = ars.nextInt();
+        System.out.println("The value of x: " + x);
+
+        System.out.println("Enter the y:");
+        y = ars.nextInt();
+        System.out.println("The value of y: " + y );
+
+        z = x ;
+        x = y ;
+        y = z ;
+
+        System.out.println("1.Swap");
+        System.out.println("2.Don't Swap");
+
+        Scanner ssg = new Scanner(System.in);
+        i = ssg.nextInt();
+
+        if (i == 1) {
+
+            System.out.println(" x's value is swapped:" + x);
+            System.out.println(" y's value is swapped:" + y);
+        }
+        else {
+            System.out.println(" x's value is not swapped:" + y );
+            System.out.println(" y's value is not swapped:" + x );
+        }
+    }
+}
